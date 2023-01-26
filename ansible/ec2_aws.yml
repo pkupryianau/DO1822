@@ -1,0 +1,18 @@
+---
+-name: Ansible EC2
+hosts: localhost
+tasks:
+- name: install ec2 from  ansible
+    ec2:
+     key_name: ec2_ansible
+     instance_type: t2.micro
+     image: ami-00874d747dde814fa # Ubuntu, 22.04 LTS
+     region: us-east-1
+     wait: yes
+     group: default
+     count: 1 
+     vpc_subnet_id: default
+     assign_public_ip: yes
+    
+
+  

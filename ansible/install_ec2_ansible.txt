@@ -1,0 +1,10 @@
+# TÃTÁTÂ¦-¦-¦-¦-¦¦¦- EC2 - https://medium.com/@deepak.kumbhar/how-to-create-ec2-instances-using-ansible-1b87a35edc0b
+# sudo apt-get install software-properties-common
+# sudo apt-add-repository ppa:Ansible/Ansible
+# sudo apt-get update
+# sudo apt-get install Ansible
+# sudo apt-get install python3.6
+# sudo apt install python3-pip
+# pip install boto
+# ansible-vault encrypt secrets.yml
+# ansible-playbook -C ec2_aws.yml --ask-vault-pass
