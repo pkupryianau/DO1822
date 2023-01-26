@@ -1,0 +1,11 @@
+## Create EKS cluster
+eksctl create cluster --name eksargocd --node-type t2.large --nodes 1 --nodes-min 1 --nodes-max 2 --region us-east-1 --zones=us-east-1a,us-east-1b,us-east-1c
+
+## Get EKS Cluster service
+eksctl get cluster --name eksargocd --region us-east-1
+
+## Update Kubeconfig 
+aws eks update-kubeconfig --name eksargocd
+
+## Get EKS Pod data.
+kubectl get pods --all-namespaces
