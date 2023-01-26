@@ -1,0 +1,8 @@
+argocd app create helm-guestbook --repo https://github.com/argoproj/argocd-example-apps.git --path helm-guestbook --dest-server https://kubernetes.default.svc --dest-namespace default
+  
+argocd app get helm-guestbook
+
+argocd app sync helm-guestbook
+
+kubectl port-forward svc/helm-guestbook 9090:80
+http://localhost:9090
